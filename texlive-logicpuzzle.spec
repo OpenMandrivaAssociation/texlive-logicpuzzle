@@ -1,12 +1,6 @@
-# revision 31024
-# category Package
-# catalog-ctan /graphics/pgf/contrib/logicpuzzle
-# catalog-date 2013-06-07 00:26:22 +0200
-# catalog-license lppl1.3
-# catalog-version 2.4
 Name:		texlive-logicpuzzle
-Version:	2.4
-Release:	9
+Version:	2.5
+Release:	1
 Summary:	Typeset (grid-based) logic puzzles
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/graphics/pgf/contrib/logicpuzzle
@@ -53,29 +47,9 @@ Zeltlager, Zeltplatz, Camping, ...), and - Tunnel.
 
 #-----------------------------------------------------------------------
 %files
-%{_texmfdistdir}/scripts/logicpuzzle/createlpsudoku
-%{_texmfdistdir}/scripts/logicpuzzle/lpsmag
-%{_texmfdistdir}/scripts/logicpuzzle/simple.smc
-%{_texmfdistdir}/tex/latex/logicpuzzle/battleship.sty
-%{_texmfdistdir}/tex/latex/logicpuzzle/bokkusu.sty
-%{_texmfdistdir}/tex/latex/logicpuzzle/chaossudoku.sty
-%{_texmfdistdir}/tex/latex/logicpuzzle/ddsudoku.sty
-%{_texmfdistdir}/tex/latex/logicpuzzle/hakyuu.sty
-%{_texmfdistdir}/tex/latex/logicpuzzle/hitori.sty
-%{_texmfdistdir}/tex/latex/logicpuzzle/kendoku.sty
-%{_texmfdistdir}/tex/latex/logicpuzzle/killersudoku.sty
-%{_texmfdistdir}/tex/latex/logicpuzzle/laserbeam.sty
-%{_texmfdistdir}/tex/latex/logicpuzzle/logicpuzzle.sty
-%{_texmfdistdir}/tex/latex/logicpuzzle/lpenv.sty
-%{_texmfdistdir}/tex/latex/logicpuzzle/lpsudoku.sty
-%{_texmfdistdir}/tex/latex/logicpuzzle/skyline.sty
-%{_texmfdistdir}/tex/latex/logicpuzzle/slitherlink.sty
-%doc %{_texmfdistdir}/doc/latex/logicpuzzle/CHANGES
-%doc %{_texmfdistdir}/doc/latex/logicpuzzle/INSTALL
-%doc %{_texmfdistdir}/doc/latex/logicpuzzle/README
-%doc %{_texmfdistdir}/doc/latex/logicpuzzle/logicpuzzle.pdf
-%doc %{_texmfdistdir}/doc/latex/logicpuzzle/logicpuzzle.tex
-%doc %{_texmfdistdir}/doc/latex/logicpuzzle/manifest.txt
+%{_texmfdistdir}/scripts/logicpuzzle
+%{_texmfdistdir}/tex/latex/logicpuzzle
+%doc %{_texmfdistdir}/doc/latex/logicpuzzle
 
 #-----------------------------------------------------------------------
 %prep
