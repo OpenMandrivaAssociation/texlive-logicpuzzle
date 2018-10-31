@@ -1,6 +1,6 @@
 Name:		texlive-logicpuzzle
 Version:	2.5
-Release:	1
+Release:	2
 Summary:	Typeset (grid-based) logic puzzles
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/graphics/pgf/contrib/logicpuzzle
