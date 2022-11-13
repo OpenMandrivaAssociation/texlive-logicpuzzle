@@ -1,12 +1,12 @@
 Name:		texlive-logicpuzzle
-Version:	2.5
-Release:	2
+Version:	34491
+Release:	1
 Summary:	Typeset (grid-based) logic puzzles
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/graphics/pgf/contrib/logicpuzzle
 License:	LPPL1.3
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/logicpuzzle.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/logicpuzzle.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/logicpuzzle.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/logicpuzzle.doc.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -38,12 +38,12 @@ Moon (aka Sternenhaufen, Munraito, ...), - Tents and Trees (aka
 Zeltlager, Zeltplatz, Camping, ...), and - Tunnel.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -53,7 +53,7 @@ Zeltlager, Zeltplatz, Camping, ...), and - Tunnel.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
